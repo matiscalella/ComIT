@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login de Facebook</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <style type="text/css">
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            text-indent: 10;
+        }
+        div {
+            background-color: #e9ebee;
+            width: 550px;
+        }
+        h1 {
+            font-size: 40px;
+            color: #1d2129;
+            margin: 0px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #4b4f56;
+            margin-top: 0px;
+        }
+        form input {
+           padding: 8px 10px;
+           font-size: 18px;
+           border: 1px solid #bdc7d8;
+           border-radius: 5px;
+           margin: 5px;
+           margin-left: 2px;
+        }
+        #titleBirthday {
+            font-size: 18px;
+            color: #4b4f56;
+            margin-bottom: 0px;
+            font-weight: normal;
+        }
+        select {
+            border: 1px solid  #BDC7D8;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #link1 {
+            color: #365899;
+            font-size: 11px;
+            text-decoration: none;
+            display: inline-block;
+            width: 150px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        div > input[type="radio"] {
+            font-weight: bold;
+            color: #1d2129;
+        }
+
+        #terms {
+            font-size: 11px;
+            width: 55%;
+            color: #777; 
+        }
+        #button {
+            border: 1px solid #3b6e22;
+            border-radius: 5px;
+            padding: 8px 25px;
+            text-align: center;
+            font-size: 19px;
+            margin: 10px 0px;
+            font-weight: bold;
+            color: #FFF;
+            background: linear-gradient(145deg, rgb(121, 188, 100), #3b6e22);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 2px 5px -3px #000;
+        }
+
+        </style>
+    </head>
+    <body>
+        <h1>Login de Facebook</h1>
+        <hr />
+        <br />
+        <div>
+        <h1>Sign Up</h1>
+        <h2>It's free and always will be.</h2>
+        <form action="#">
+            <table>
+                <tr>
+                    <td><input type="text" name="firstName" placeholder="First name" size="20"/></td>
+                    <td><input type="text" name="lastName" placeholder="Last name" size="20"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="telefono/email" placeholder="Mobile number or email" size="48"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="password" name="password" placeholder="New password" size="48"/></td>
+                </tr>
+            </table>
+            <p id="titleBirthday"><strong>Birthday</strong></p>
+            <select name="month">
+                <option value="month1" selected="selected" >Month</option>
+                <option value="abril">April</option>
+            </select>
+            <select name="dia" id="">
+                <option value="day1" selected="selected">Day</option>
+                <option value="15">15</option>
+            </select>
+            <select name="year">
+                <option value="year1" selected="selected">Year</option>
+                <option value="1991">1991</option>
+            </select>
+            <span><a id="link1" href="#">Why do i need to provide my birthday?</a></span>
+            <div>
+                <br />
+                <input type="radio" name="genero" value="mujer"/>Female
+                <input type="radio" name="genero" value="hombre"/>Male
+            </div>
+            <p id="terms">By clicking Create Account, you agree to our <a href="#">Terms</a> and that you have
+            read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>. You may receive
+            SMS Notifications from Facebook and can opt out at any time.</p>
+            <button id="button">Create Account</button>
+        </form>
+        </div>
+    </body>
+</html>

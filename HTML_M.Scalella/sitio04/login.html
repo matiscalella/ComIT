@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Ingreso</title>
+        <meta charset="utf-8"/> 
+        <meta name="description" content="Sitio con información sobre mis animales favoritos del territorio nacional"/> 
+        <meta name="keyowrds" content="animales argentinos, nacionales, fauna nacional"/> 
+        <meta name="author" content="Matías Scalella"/> 
+    </head>
+    <body>
+        <h1>Inicie Sesión en su cuenta</h1>
+
+        <hr />
+        <section>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <table>
+                <tr>
+                    <th><label for="nombreUsuario">Nombre de Usuario</label></th>
+                    <th><label for="passwordUsuario">Contraseña</label></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nombreUsuario" name="username" placeholder="Usuario" required="required"></td>
+                    <td><input type="password" id="passwordUsuario" name="password" maxlength="8" placeholder="Contraseña" required="required"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><a href="#">Olvidé mi contraseña</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><button>Login <img src="imagenes/paw.png" width="40"/></button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+        <hr />
+        </section>
+        <section id="usuarioNuevo">
+            <h2>Crea tu usuario</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                        <legend><strong>Datos de Usuario Nuevo</strong></legend>
+                        <label for="usuarioNuevo">Nombre de usuario</label>
+                        <input type="text" name="usuarioNuevo" id="usuarioNuevo" size="25" placeholder="Escriba aquí">
+                        <!-- Al clickear aquí el usuario verifica que el nombre elegido no esté actualmente en uso -->
+                        <a href="#">Comprobar si el nombre está en uso.</a>
+                        <br />
+                        <label for="password1">Clave</label>
+                        <input type="password" name="password1" id="password1" size="20" placeholder="Escriba aquí">
+                        <label for="password2">Repetir Clave</label>
+                        <input type="password" name="password2" id="password2" size="20" placeholder="Escriba aquí">
+                        <br />
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="1email" size="25" placeholder="Ingrese su mail aquí."/>
+                        <label for="email2">Repetir e-mail</label>
+                        <input type="email" id="email2" name="2email" size="25" placeholder="Verificar e-mail."/>
+                        <br />
+                        Subí tu imagen:
+                        <input type="file" name="imagenUsuario" />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend><strong>Datos personales</strong></legend>
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <label for="apellido">Ingrese su apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <br />
+                    Fecha de nacimiento:
+                    <input type="text" size="2" name="dia" placeholder="Día">
+                    <span> / </span>
+                    <select name="año" id="año">
+                        <option value="mes">Mes</option>
+                        <option value="ene">Enero</option>
+                        <option value="feb">Febrero</option>
+                        <option value="mar">Marzo</option>
+                        <option value="abr">Abril</option>
+                        <option value="may">Mayo</option>
+                        <option value="jun">Junio</option>
+                        <option value="jul">Julio</option>
+                        <option value="ago">Agosto</option>
+                        <option value="sept">Septiembre</option>
+                        <option value="oct">Octubre</option>
+                        <option value="nov">Noviembre</option>
+                        <option value="dic">Diciembre</option>
+                    </select>
+                    <span> / </span>
+                    <input type="text" name="año" size="4" placeholder="Año">
+                    <br />
+                    Sexo:
+                    <input type="radio" name="sexo" value="masculino" checked="checked"> Masculino
+                    <input type="radio" name="sexo" value="femenino"> Femenino
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend><strong>Datos de Contacto</strong></legend>
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option value="pais">Elegir...</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <input type="text" name="otro" size="20" placeholder="'Otro', especifique aquí..." />
+                    <br />
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" id="direccion" placeholder="Avenida / Calle" size="25"/>
+                    <input type="text" name="numero" size="6" placeholder="Número"/>
+                    <input type="text" name="piso" placeholder="Piso" size="3"/>
+                    <input type="text" name="departamento" placeholder="Dpto" size="3"/>
+                    <br />
+                    <label for="codigoPostal">Código Postal</label>
+                    <input type="text" name="codigoPostal" placeholder="Número" size="6"/>
+                    <br />
+                    <label for="tel">Teléfono</label>
+                    <input type="text" name="tel" id="tel" value="+54(011)" size="25">
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend><strong>Sobre vos</strong></legend>
+                    <label>¿Sobre qué tipo de animales te gustaría recibir información?</label>
+                    <br />
+                    <input type="checkbox" name="tipoDeAnimal" value="reptiles" checked="checked"> Reptiles
+                    <input type="checkbox" name="tipoDeAnimal" value="anfibios" >Anfibios
+                    <input type="checkbox" name="tipoDeAnimal" value="mamiferos" checked="checked">Mamíferos
+                    <input type="checkbox" name="tipoDeAnimal" value="aves" >Aves
+                    <input type="checkbox" name="tipoDeAnimal" value="peces" >Peces
+                    <input type="checkbox" name="tipoDeAnimal" value="inscetos" checked="checked"> Insectos
+                    <input type="checkbox" name="tipoDeAnimal" value="mascotas" checked="checked">Mascotas
+                    <br />
+                    <label for="sobreElUsuario"><strong>¡Contanos más!</strong></label>
+                    <br />
+                    <textarea name="sobreElUsuario" id="sobreElUsuario" cols="150" rows="10" placeholder="Contanos sobre tu vida, tus intereses, hobbies, pasiones... ¡lo que quieras!"></textarea>
+                </fieldset>
+                <button>Crear usuario<img src="imagenes/paw.png" width="40"></button>
+            </form>
+        </section> 
+    </body>
+</html>

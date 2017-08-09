@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boton con imagen</title>
+    </head>
+    <body>
+        <h1>Boton con imagen</h1>
+        <hr />
+        <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12" />
+            <input type="password" name="password" placeholder="password" size="30" maxlength="8"/>
+            <input type="image" src="login.png" name="submit" value="Login">
+        </form>
+        <!--
+            URL al enviar los datos: 
+            http://192.168.0.253:8080/ej28/login.html?username=matias&password=12345678&submit.x=0&submit.y=0&submit=Login
+        -->
+    </body>
+</html>

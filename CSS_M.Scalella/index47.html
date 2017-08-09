@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profundidad?</title>
+        <style type="text/css">
+        body {
+            background-color: #ccc;
+        }
+        p {
+            position: fixed;
+            width: 300px;
+            top: 100px;
+            left: 200px;
+            background-color: #444;
+        }
+        .azul {
+            background-color: blue;
+            z-index: 3; /* Si su profundidad es 3, se posicionara detras del parrafo rojo ya que su profundidad es mayor a la del parrafo rojo.*/
+        }
+        .rojo {
+            background-color: red;
+            z-index: 2;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Profundidad?</h1>
+        <p class="azul">Aenean laoreet ullamcorper eleifend. Sed hendrerit sed ligula et volutpat. Donec at lacinia purus. Etiam aliquet, lectus quis cursus fringilla, eros dui eleifend ante, ac placerat ante lacus consequat ante. Vivamus elementum felis leo, sed ornare libero consequat sit amet. Fusce suscipit vitae eros ac fringilla. Suspendisse ultrices cursus lacus. Vestibulum eleifend eros nec metus rutrum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget dapibus ipsum. Integer suscipit lectus sed lectus tempor auctor.</p>
+        <p class="rojo">Vivamus lobortis eget risus id congue. Maecenas lobortis scelerisque quam vel viverra. Morbi pulvinar pulvinar lacus, pharetra consectetur ex congue accumsan. Aenean consectetur gravida arcu sit amet blandit. Fusce venenatis blandit turpis sit amet tincidunt. Vivamus vel ex dui. Etiam cursus suscipit velit sit amet dictum.</p>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Replicando formulario de Twitter</title>
+        <style type="text/css">
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        fieldset {
+            border: 2px solid #eef;
+            width: 500px;
+            border-radius: 20px;
+        }
+        
+        .form {
+            font-size: 24px;
+            border-radius: 7px;
+            border: 2px solid #eef;
+            padding: 5px;
+            box-shadow: 1px 2px 3px -3px rgba(0, 0, 0, 0.5);
+        }
+        ::-webkit-input-placeholder {
+            color: rgba(102, 117, 127, 0.7);
+        }
+        .form:hover {
+            border-color: #1dcaff;
+        }
+          .login {
+            background-color: #FFF;
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 2px solid #1dcaff;
+            color: #1dcaff;
+            padding: 10px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .checktext {
+            display: inline-block;
+            color: rgba(102, 117, 127, 0.7);
+        }
+        form input .check {
+            width: 100px;
+        }
+        a {
+            color: #1dcaff;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        span {
+            color: rgba(102, 117, 127, 0.7);
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Formulario de Twitter</h1>
+        <hr />
+        <form action="#">
+            <fieldset>
+                <input class="form" type="text" name="datosingresados" placeholder="Phone, email or username" size="30">
+                <br />
+                <input class="form" type="password" maxlength="8" placeholder="Password" size="20"> <button class="login">Log in</button>
+                <br />
+                <input class="check" type="checkbox" checked="checked" name="remember" value="remember"> <div class="checktext">Remember me</div>
+                <span> • </span>
+                <a href="#" target="_blank">Forgot Password?</a>
+            </fieldset>
+        </form>
+    </body>
+</html>

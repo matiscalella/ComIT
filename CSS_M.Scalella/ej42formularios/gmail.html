@@ -1,0 +1,158 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Formulario Gmail</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        form {
+            background-color: #F1F1F1;
+            padding: 25px;
+            width: 600px;
+        }
+        div {
+            font-weight: bold;
+        }
+        
+        .inputBox {
+            display: inline-block;
+            padding: 8px 10px;
+            margin: 10px auto;
+            margin-bottom: 30px;
+            border-radius: 1px;
+            font-size: 16px;
+            border: 1px solid #B9B9B9;
+            border-top-color: #A0A0A0;
+        }
+        #gmail {
+            display: inline-block;
+            border-top-right-radius: 1px;
+            border-bottom-right-radius: 1px;
+            padding: 8px 10px;
+            background-color: #FFF;
+            border: 1px solid #B9B9B9;
+            border-top-color: #A0A0A0;
+            border-left: none;
+            font-size: 16px;
+            color: #999999;
+        }
+        .usernameBox {
+            border-right: none;
+        }
+        select.month {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 0 18px 0 6px;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid  #C6C6C6;
+            border-top-color: #A0A0A0;
+            width: 300px;
+            height: 38px;
+            background-color: #F1F1F1;
+            font-size: 16px;
+        }
+        #gender {
+            display: inline-block;
+            width: 507px;
+            margin: 10px auto;
+            background-color: #F1F1F1;
+            border: 1px solid  #C6C6C6;
+            border-top-color: #A0A0A0;
+            height: 38px;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 18px 0 6px;
+            margin-bottom: 30px;
+        }
+        #mobile {
+            display: inline-block;
+            width: 30px;
+        }
+        #location {
+            display: inline-block;
+            width: 507px;
+            margin: 10px auto;
+            background-color: #F1F1F1;
+            border: 1px solid  #C6C6C6;
+            border-top-color: #A0A0A0;
+            height: 38px;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 18px 0 6px;
+            margin-bottom: 30px;
+        }
+        .input {
+            width: 507px;
+        }
+        button {
+            color: White;
+            font-weight: bold;
+            display: block;
+            padding: 12px 16px;
+            background-color: #357AE8;
+            border-radius: 2px;
+            border: 1px solid  #2F5BB7;
+            font-size: 20px;
+            margin-left: 383;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Formulario Gmail</h1>
+        <hr />
+        <form action="#">
+            <div>Name</div>
+            <input style="width: 250px" class="inputBox" type="text" name="first" placeholder="First" size="20"/>
+            <input style="width: 250px" class="inputBox" type="text" name="last" placeholder="Last" size="20"/>
+            <div>Choose your username</div>
+            <input class="inputBox usernameBox" type="email" name="username-mail"size="30"><span id="gmail">@gmail.com</span>
+            <div>Create your password</div>
+            <input class="inputBox" type="password" name="password" size="60">
+            <div>Confirm your password</div>
+            <input class="inputBox" type="password" name="password" size="60">
+            <div>Birthday</div>
+            <select class="month" name="month">
+                <option value="month" selected="selected">Month</option>
+                <option value="dic">Diciembre</option>
+                <option value="ene">Enero</option>
+                <option value="feb">Febrero</option>
+                <option value="mar">Marzo</option>
+                <option value="abr">Abril</option>
+                <option value="may">Mayo</option>
+                <option value="jun">Junio</option>
+                <option value="jul">Julio</option>
+                <option value="ago">Agosto</option>
+                <option value="sept">Septiembre</option>
+                <option value="oct">Octubre</option>
+                <option value="nov">Noviembre</option>
+            </select>
+            <input class="inputBox" type="text" name="day" maxlength="2" placeholder="Day" size="2"/>
+            <input class="inputBox" type="text" name="year" maxlength="4" placeholder="Year" size="6">
+            <div>Gender</div>
+            <select id="gender" name="gender">
+                <option value="iam" selected="selected">I am...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <div>Mobile phone</div>
+            <input class="inputBox input" type="text" name="phone" value="+54">
+            <div>Your current email address</div>
+            <input class="inputBox input" type="email" name="currentEmail"> 
+            <div>Location</div>
+            <select id="location" name="country">
+                <option value="argentina" selected="selected">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="paraguay">Paraguay</option>
+            </select>
+            <button>Next step</button>     
+        </form>
+    </body>
+
+</html>

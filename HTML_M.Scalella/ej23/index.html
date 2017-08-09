@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <hr />
+        <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12" />
+            <input type="password" name="password" placeholder="password" size="30" maxlength="8"/>
+            <input type="submit" name="login" value="Login">
+        </form>
+        <!--
+            Luego de enviar los datos, la URL cambió a:
+            http://192.168.0.253:8080/ej23/login.html?username=scalella&password=12345678&login=Login
+            Cualquier usuario podría mirar la URL y saber el password de quien inicia sesión.
+        -->
+    </body>
+</html>

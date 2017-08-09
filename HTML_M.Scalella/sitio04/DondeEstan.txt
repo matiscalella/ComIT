@@ -1,0 +1,11 @@
+Crear un formulario de login -> login.html
+Crear un formulario de registro de usuario -> login.html (abajo)
+Crear un formulario de contacto -> index.html AL FINAL
+Crear un formulario para dejar comentarios en alguna parte del sitio -> al final en todas las páginas de animales
+Incluir alguna sección de nuestro sitio utilizando un iframe -> Usé un Iframe para el video de los dogos jugando en la página Dogo, e hice lo mismo para incluir un documental en la seccion PUMA
+Agregar un video o audio de ser posible -> Videos en la página del cóndor y la vicuña. NO funcionan porque el link es una página de YouTube (si los descargo son pesados)
+Agregar la siguiente metadata a todos los documentos: LISTO
+charset: utf-8 LISTO
+description: con la descripción de cada documento LISTO
+keywords: con las palabras correspondientes para el sitio y cada documento LISTO
+author: Su nombre y apellido LISTO

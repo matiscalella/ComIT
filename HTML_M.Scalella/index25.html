@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Radio Buttons</title>
+    </head>
+    <body>
+        <h1>Radio Buttons</h1>
+        <hr />
+        <form action="#" >
+            <div>
+                <p>Talle de remera</p>
+                <input type="radio" value="s" name="talle" checked="checked"/> Small
+                <input type="radio" value="m" name="talle"/> Medium   
+                <input type="radio" value="l" name="talle" /> Large
+                <input type="radio" value="xl" name="talle" /> Extra Large
+            </div>
+            <div>
+                <p>Color</p>
+                <input type="radio" value="rojo" name="color" /> Rojo
+                <input type="radio" value="gris" name="color2" /> Gris
+                <input type="radio" value="negro" name="color3" checked="checked"/> Negro
+            </div>
+            <input type="submit" name="submit" value="Comprar" />            
+        </form>
+        <!-- Elegir un name distinto para cada radio button de Color, hace que 
+        pertenezcan a un grupo "distinto" por lo tanto puedo seleccionarlos todos o más de uno.
+        Cuando en realidad lo que busco es que solo 1 de las opciones se pueda seleccionar.
+        
+        Al ejecutar el formulario en la URL del browser aparece:
+        http://192.168.1.14:8081/index25.html?talle=m&color=rojo&color2=gris&color3=negro&submit=Comprar#
+        -->
+    </body>
+
+</html>
