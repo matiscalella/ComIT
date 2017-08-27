@@ -1,12 +1,12 @@
 let linea = 0;
-console.log('*')
-while (linea <= 8) {
+
+do {
     let cantidadDeCaracteres = 0;
     let asterisco = '';
         while (cantidadDeCaracteres <= linea) {
-        asterisco += '**';
+        asterisco += '*';
         cantidadDeCaracteres++;
     }
     console.log(asterisco);
     linea++;
-}
+} while (linea <= 8);
