@@ -1,11 +1,11 @@
 function esPar(numero) {
     if (numero % 2 === 0) {
         return true;
-    } else { return false;}
+    } else { return false; }
 }
 
-esPar(2);
-
-if (esPar() === true) {
+if (esPar(numero) === true) {
     console.log(`${numero} es par`)
 } else {console.log(`${numero} no es par`)}
+
+esPar(2);
