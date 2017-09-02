@@ -1,5 +1,5 @@
 let gustos = [];
 
-let agregoGustos = gustos.push('Menta Granizada', 'Dulce de Leche Granizado', 'Vainilla', 'Chocolate', 'Crema Americana', 'Super Dulce de Leche', 'Crema del cielo', 'Chocolate Blanco', 'Granizado', 'Mousse de Chocolate');
+let gustosAgregados = gustos.unshift('Dulce de Leche', 'Menta Granizada', 'Chocolate', 'Vainilla', 'Crema americana', 'Granizado', 'Chocolate Marroc', 'Tramontana', 'Crema del Cielo', 'Sambayon');
 
 console.log(gustos);
