@@ -12,10 +12,10 @@ let mutantes = [
     'Ororo Monroe'
 ];
 
-if (mutantes.indexOf('Lorna Sally Dane' > -1)) {
-    console.log();
-} else {
-    console.log('Lorna Sally Dane');
-};
+const mutantesSinScott = mutantes.filter(function(mutante){
+    if (mutante != 'Scott Summers') {
+        return true;
+    }
+});
 
-console.log(mutantes.toString());
+console.log(mutantesSinScott[1]);

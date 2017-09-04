@@ -12,10 +12,10 @@ let mutantes = [
     'Ororo Monroe'
 ];
 
-if (mutantes.indexOf('Lorna Sally Dane' > -1)) {
-    console.log();
-} else {
-    console.log('Lorna Sally Dane');
-};
+const copiaMutantes = mutantes.map(function(mutante){
+    for (let i = 0; (i <= mutantes.length - 1); i++) {
+        return mutantes[i] += '<3';
+    }
+});
 
-console.log(mutantes.toString());
+console.log(copiaMutantes);

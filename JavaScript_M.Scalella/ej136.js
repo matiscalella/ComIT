@@ -12,10 +12,10 @@ let mutantes = [
     'Ororo Monroe'
 ];
 
-if (mutantes.indexOf('Lorna Sally Dane' > -1)) {
-    console.log();
-} else {
-    console.log('Lorna Sally Dane');
-};
+mutantes.forEach(function(mutante){
+    console.log(mutante);
+});
 
-console.log(mutantes.toString());
+let string = '';
+string = mutantes[3] + ' / ' + mutantes[9];
+console.log(string);
