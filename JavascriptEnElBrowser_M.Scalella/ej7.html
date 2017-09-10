@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        alert('Vamos a sumar todos los números que Ud. ingrese');
+        confirm('¿Desea sumar un numero?');
+        while (confirm('¿Desea sumar un numero?') === true) {
+            let numero1 = prompt('Ingrese un numero');
+            let numero2 = prompt('Ingrese otro numero');
+            let resultado = (numero1 += numero2);
+            alert(`La suma es: ${resultado}`);
+            confirm('¿Desea sumar un numero?');
+        };
+
+
+
+        /*let numeroIngresado = prompt('Ingrese un numero');
+        let agregarNumero = confirm('Ingrese otro número');
+        let numeroIngresado2 = prompt('Ingrese un numero');
+        let resultadoSuma = numeroIngresado + numeroIngresado2;
+        alert(`La suma entre ${numeroIngresado} y ${numeroIngresado2} es: ${resultadoSuma}`)
+        while (agregarNumero === true) {
+            numeroIngresado;
+            resultadoSuma;
+            alert(`La suma de ${resultadoSuma} y ${numeroIngresado} es: ${resultadoSuma}`)
+        }*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

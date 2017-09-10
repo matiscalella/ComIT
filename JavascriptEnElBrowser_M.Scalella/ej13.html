@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let segundos = prompt('Ingrese la cantidad de segundos que quiere ver la pagina');
+        let contador = 0;
+        setInterval(function(){
+            contador++;
+            if (contador <= segundos) {
+            console.log(contador);
+            } else {
+                alert('Ha caducado su sesion por favor vuelva a ingresar')
+            }
+        }, 1000);        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
