@@ -32,12 +32,14 @@
     }
   </style>
   <script>
+    window.onload = function() {
       let primerHipervinculo = document.querySelector('a');
       if (primerHipervinculo.hasAttribute('class') === true) {
           primerHipervinculo.classList.add('azul');
       } else {
         primerHipervinculo.classList.add('rojo');
       };
+    }      
   </script>
 </head>
 <body>

@@ -3,6 +3,7 @@
 <head>
   <title>Atributos</title>
   <script>
+    window.onload = function() {
       let colorElegido = prompt('Ingrese un color (verde, azul, rojo)');
       let primerHipervinculo = document.querySelector('a');
       switch (colorElegido) {
@@ -18,6 +19,7 @@
           default:
             console.log('No se agrega clase.')
     }
+    };      
   </script>
   <style>
     a {

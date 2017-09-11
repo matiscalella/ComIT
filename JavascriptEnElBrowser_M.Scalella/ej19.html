@@ -11,6 +11,7 @@
     }
   </style>
   <script>
+    window.onload = function() {
       let h = document.querySelector('h1');
       let div = document.querySelector('div');
       if (h.hasAttributes() === true || div.hasAttributes === true) {
@@ -20,6 +21,7 @@
         h.setAttribute('class', 'negrita');
         div.setAttribute('class', 'negrita');
       }
+    }
   </script>
 </head>
 <body>
