@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        alert('Vamos a sumar todos los numeros que Ud. ingrese, y a mostrarle su promedio');
+        let numero1 = parseFloat(prompt('Ingrese un numero.'));
+        let i = 2;
+        while (confirm('¿Quiere ingresar otro numero?') === true) {
+            let numero2 = parseFloat(prompt('Ingrese otro numero.'));
+            let suma = (numero1 += numero2);
+            let promedio = (suma / i);
+            i++;
+            alert(`El promedio de los numeros ingresados es ${promedio}`)
+            alert(`La suma de los numeros ingresados es ${suma}`)
+        }        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
