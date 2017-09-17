@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prductos</title>
+    <script>
+        window.onload = function(){
+            let ul = document.querySelector('ul');
+            let bananas = ul.children.item(0);
+            let manzanas = ul.children.item(1);
+            let peras = ul.children.item(2);
+            let huevos = ul.children.item(3);
+            let tomate = ul.children.item(4);
+            let lechuga = ul.children.item(5);
+            let leche = ul.children.item(6);
+            ul.removeChild(bananas);
+            ul.removeChild(manzanas);
+            ul.removeChild(peras);
+            ul.removeChild(huevos);
+            ul.removeChild(tomate);
+            ul.removeChild(lechuga);
+            ul.removeChild(leche);
+        };
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Bananas</li>
+      <li>Manzanas</li>
+      <li>Peras</li>
+      <li>Huevos</li>
+      <li>Tomates</li>
+      <li>Lechuga</li>
+      <li>Leche</li>
+    </ul>
+  </body>
+</html>
