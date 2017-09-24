@@ -22,15 +22,11 @@
             html.addEventListener('click', function(event){
                 console.log(`x: ${event.clientX}, y: ${event.clientY}`);
             });
-            let div = document.querySelector('div');
             html.addEventListener('keypress', function(event){
                 event.charCode;
                 let valorLetra = String.fromCharCode(event.charCode);
-                div.textContent = valorLetra;
+                console.log(`códido de letra: ${event.charCode}, letra: ${valorLetra}`)
             });
-            html.appendChild(div);
-            
-
         }
     </script>
   </head>
@@ -39,6 +35,5 @@
     <button id="primer-boton">Haceme Click!!</button>
     <button id="segundo-boton">Sacar handler</button>
     <a href="http://google.com">Hipervinculo controlado por ECMAScript</a>
-    <div></div>
   </body>
 </html>

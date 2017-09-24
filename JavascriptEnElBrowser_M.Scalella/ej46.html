@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <script>
+      window.onload = function(){
+          let form = document.querySelector('form');
+          form.onsubmit = function(event){
+              let select = document.querySelector('select');
+              event.preventDefault();
+              let index = select.selectedIndex;
+              let id = select.options[index].value;
+              let pais = null;
+              switch (id) {
+                  case '1':
+                    pais = 'Argentina';
+                    break;
+                  case '2':
+                    pais = 'Brasil';
+                    break;
+                  case '3':
+                    pais = 'Colombia';
+                    break;
+                  case '4':
+                    pais = 'Venezuela'; 
+                    break;
+              }
+              window.alert(`Que viva ${pais} que tiene el id ${id}`);
+              return false;
+          }
+      }
+  </script>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <select id="paises">
+      <option value="1">Argentina</option>
+      <option value="2">Brasil</option>
+      <option value="3">Colombia</option>
+      <option value="4">Venezuela</option>
+    </select>
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>

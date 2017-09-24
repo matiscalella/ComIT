@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <script>
+      window.onload = function() {
+          let form = document.querySelector('form');
+          let lista = document.createElement('ul');
+          let liItem1 = document.createElement('li');
+          let liItem2 = document.createElement('li');
+          let liItem3 = document.createElement('li');
+          let username = form.elements[0];
+          let pass = form.elements[1];
+          let submit = form.elements[2];
+          liItem1.textContent = 'Valor del Usuario: ' + username.value;
+          liItem2.textContent = 'Valor del Pass: ' + pass.value;
+          liItem3.textContent = 'Valor del Submit: ' + submit.value;
+          let body = document.querySelector('body');  
+          form.onsubmit = function(event) {
+                event.preventDefault();
+                lista.appendChild(liItem1);
+                lista.appendChild(liItem2);
+                lista.appendChild(liItem3);
+                body.appendChild(lista);
+                return false;                
+          }
+      }
+  </script>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>

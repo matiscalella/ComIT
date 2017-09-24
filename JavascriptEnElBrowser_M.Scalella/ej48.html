@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <script>
+      window.onload = function(){
+          let form = document.querySelector('form');
+          let username = form.elements[0];
+          let pass = form.elements[1];
+          username.onfocus = function() {
+              console.log('En foco username: ' + username.value);
+          }
+          pass.onfocus = function() {
+              console.log('En foco password: ' + pass.value);
+          }
+          username.onblur = function() {
+              console.log('El usuario salio de Username: ' + username.value);
+          }
+          pass.onblur = function() {
+              console.log('El usuario salio de password: ' + pass.value);
+          }
+          username.oninput = function() {
+              console.log('Username: ' + username.value);
+          }
+          pass.oninput = function() {
+              console.log('Password: ' + pass.value);
+          }
+          
+      }
+  </script>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>

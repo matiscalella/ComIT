@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <script>
+      window.onload = function() {
+          let form = document.querySelector('form');
+          let div = document.createElement('div');
+          div.setAttribute('id', 'mensaje');
+          let body = document.querySelector('body');
+          let username = form.elements[0];
+          let pass = form.elements[1];
+          form.onsubmit = function(event) {
+            if (username.value.length === 0 && pass.value.length === 0) {
+                div.textContent = 'Por favor ingrese un nombre de usuario y password válidos';
+            } else {
+                div.textContent = 'Usuario Logeado';
+            }
+            event.preventDefault();            
+          }
+          body.appendChild(div);         
+      }
+  </script>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>
