@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Propiedades del form</title>
+  <script>
+      window.onload = function() {
+          let form = document.querySelector('form');
+          let div = document.createElement('div');
+          div.setAttribute('id', 'mensaje');
+          let body = document.querySelector('body');
+          let username = form.elements[0];
+          let pass = form.elements[1];
+          // Seleccion input de Email
+          let email = form.elements[2];
+          // Agrego PLACEHOLDER
+          email.setAttribute('placeholder', 'Email');
+          username.setAttribute('placeholder', 'Nombre de Usuario');
+          pass.setAttribute('placeholder', 'Password');
+          // Creo Validacion para el usuario
+          const validarUsername = function(username) {
+            const regexCampoVacio = /^[a-z0-9]+$/i;
+            return regexCampoVacio.test(username);
+          }
+          // Creo Validacion para el password
+          const validarPass = function(pass) {
+            const regexCampoVacio = /^[a-z0-9]+$/i;
+            return regexCampoVacio.test(pass);
+          }
+          // Creo validacion para el Email
+          const validarMail = function(email) {
+            const regexMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return regexMail.test(email);
+          }
+
+          form.onsubmit = function(event) {
+            event.preventDefault();
+            if (!validarUsername(username.value) | !validarPass(pass.value) | !validarMail(email.value)) {
+                div.textContent = 'Por favor ingrese un nombre de usuario y password válidos';
+                return false;
+            } else {
+                div.textContent = 'Usuario Logeado';
+                return true;
+            }                        
+          }
+          body.appendChild(div);
+
+      }
+  </script>
+</head>
+<body>
+  <form action="guardar_usuario.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <!-- Agrego input de Email -->
+    <input type="text" id="email" name="email" />
+    <input type="submit" name="submit" value="Enviar" />
+  </form>
+</body>
+</html>
