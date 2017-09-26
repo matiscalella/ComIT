@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = function() {
+                var apiRequest = new XMLHttpRequest();
+
+                apiRequest.onreadystatechange = function() {
+                    if (apiRequest.readyState == 4 && apiRequest.status == 200) {
+                        let apiRequestECMA = JSON.parse(apiRequest.responseText);
+                        console.log(apiRequestECMA);
+                    }
+                };
+
+                apiRequest.open("GET", "https://swapi.co/api/films/", true);
+                apiRequest.send();
+                
+
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
